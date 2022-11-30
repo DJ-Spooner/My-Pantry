@@ -7,6 +7,9 @@
 
 body {}
 
+
+                  /* Nav Bar */
+
 nav {
     position: relative;
     z-index: 99;
@@ -117,6 +120,79 @@ form button {
     color: rgb(32, 32, 32);
     padding-top: .5rem;
 }
+
+
+                  /* Table Lists */
+
+
+
+
+.table caption {
+    text-align: left;
+    margin: 0 0 7px 7px;
+    font-weight: bold;
+    color: rgb(13, 50, 109);
+}
+
+.item-table {
+    
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 2rem auto;
+    font-size: 1rem;
+    min-width: 300px;
+    width: 90%;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+    box-shadow: 4px 0 10px -0.5px rgba(32, 32, 32, 0.4);
+}
+
+.table thead tr :first-of-type {
+    border-radius: 7px 0 0 0;
+}
+.table thead tr :last-of-type {
+    border-radius: 0 7px 0 0;
+}
+
+.table thead tr {
+    background-color: rgb(32, 32, 32);
+    color: rgb(197, 165, 23);
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th, 
+.table td {
+    padding: 5px 15px;
+}
+
+.table tbody:last-of-type {
+    border-bottom: 2px solid rgb(32, 32, 32);
+}
+
+.table tbody tr td button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+}
+
+.table tbody tr .item-edit-cell button i {
+    color: rgb(13, 50, 109);
+    font-size: large;
+}
+
+.table tbody tr .item-delete-cell button i {
+    color: rgb(190, 7, 7);
+    font-size: large;
+}
+
 
 
 
