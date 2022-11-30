@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {}
+
+nav {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+nav h1 {
+    letter-spacing: 1px;
+    padding: .05rem 0.5rem;
+    
+}
+
+nav h1 span {
+    transition: 0.1s;
+    color: rgb(197, 165, 23);
+}
+
+nav a {
+    color: rgb(197, 165, 23);
+}
+
+.nav-menu {
+    display: none;
+    align-items: center;
+    margin: 0 -1rem;
+}
+
+.nav-menu a {
+    margin: 0 1rem;
+    transition: 0.1s;
+    color: rgb(197, 165, 23);
+    text-decoration: none;}
+
+.hamburger {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.hamburger span {
+    color: rgb(197, 165, 23);
+}
+
+.mobile-nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    opacity: 0;
+    background-color: rgb(32, 32, 32);
+    color: rgb(197, 165, 23);
+    transform: translateY(-100%);
+    transition: 0.3s;
+    padding-top: 6rem;
+}
+
+.mobile-nav-menu.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-nav-menu a {
+    display: block;
+    padding: 2rem;
+    color: rgb(197, 165, 23);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.mobile-nav-menu a:hover {
+    color:white;
+    background-color: rgb(197, 165, 23);
+}
+
+form {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+form input {
+    height: 2rem;
+    width: 200px;
+}
+
+form button {
+    font-size: 1.5rem;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(32, 32, 32);
+    padding-top: .5rem;
+}
+
+
+
+
+
+
+
+
+
+/* Tablet Break Point */
+@media screen and (min-width: 481px) {
+    .mobile-nav-menu, .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+}
